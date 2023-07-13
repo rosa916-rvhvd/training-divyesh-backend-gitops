@@ -1,0 +1,15 @@
+app:
+  name: training-divyesh-poi-backend-app
+  namespace: training-divyesh
+  cluster: .apps.rosa916.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rosa916-rvhvd/training-divyesh-backend
+  org: rosa916-rvhvd
+  name: training-divyesh-backend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: training-divyesh/poi-backend-app
+  tag: latest
